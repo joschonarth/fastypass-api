@@ -10,37 +10,24 @@ jobs:
     services:
       postgres:
         image: bitnami/postgresql
+        ports:
+          - 5432:5432
         env:
           POSTGRESQL_USERNAME: docker
           POSTGRESQL_PASSWORD: docker
           POSTGRESQL_DATABASE: apisolid
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: 20
           cache: 'npm'
 
-      - name: Install dependencies
-        run: npm ci
-      
-      - name: Wait for PostgreSQL
-        run: |
-          for i in {1..30}; do
-            if nc -z postgres 5432; then
-              echo "PostgreSQL is up!"
-              break
-            fi
-            echo "Waiting for PostgreSQL to start..."
-            sleep 1
-          done
+      - run: npm ci
 
-      - name: Run E2E tests
-        run: npm run test:e2e
+      - run: npm run test:e2e
         env:
           JWT_SECRET: testing
-          DATABASE_URL: postgres://docker:docker@postgres:5432/apisolid?schema=public
+          DATABASE_URL: "postgresql://docker:docker@localhost:5432/apisolid?schema=public"
