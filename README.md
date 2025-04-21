@@ -1,6 +1,6 @@
 <h1 align="center">💪 Trainify</h1>
 
-<p align="center">Uma API de gerenciamento de academias inspirada no GymPass, projetada para simplificar a conexão entre usuários e academias.
+<p align="center"><i>API para gerenciamento de academias, projetada para facilitar a conexão entre usuários e estabelecimentos fitness.</i>
   <br/><br/>
   <img src="https://img.shields.io/github/last-commit/joschonarth/trainify?style=default&logo=git&logoColor=white&color=0080ff&labelColor=2f363d" alt="last-commit">
 	<img src="https://img.shields.io/github/languages/top/joschonarth/trainify?style=default&color=0080ff&labelColor=2f363d" alt="repo-top-language">
