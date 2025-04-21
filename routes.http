@@ -1,0 +1,98 @@
+@authToken = {{authenticate.response.body.token}}
+
+### 🎉 Criar Usuário
+POST http://localhost:3333/users
+content-type: application/json
+
+{
+  "name": "John Doe",
+  "email": "johndoe@example.com",
+  "password": "123456"
+}
+
+###
+
+### 🔐 Autenticar Usuário
+# @name authenticate
+POST http://localhost:3333/sessions
+content-type: application/json
+
+{
+  "email": "johndoe@example.com",
+  "password": "123456"
+}
+
+###
+
+### 🔄 Refresh Token
+PATCH http://localhost:3333/token/refresh
+Authorization: Bearer {{authToken}}
+
+###
+
+### 👤 Ver Perfil
+GET http://localhost:3333/me
+Authorization: Bearer {{authToken}}
+
+###
+
+### 🏋️ Criar Academia
+# Apenas usuários com a role ADMIN podem acessar esta rota
+POST http://localhost:3333/gyms
+content-type: application/json
+Authorization: Bearer {{authToken}}
+
+{
+  "title": "TypeScript Gym",
+  "description": "Some description",
+  "phone": "11999999999",
+  "latitude": -20.7400886,
+  "longitude": -47.753894
+}
+
+###
+
+### 🔍 Buscar Academias
+GET http://localhost:3333/gyms/search?q=TypeScript&page=1
+Authorization: Bearer {{authToken}}
+
+###
+
+### 📍 Listar Academias Próximas
+GET http://localhost:3333/gyms/nearby?latitude=-20.7400886&longitude=-47.753894
+Authorization: Bearer {{authToken}}
+
+###
+
+### ✅ Criar Check-in
+# Substitua :gymId pelo ID real da academia
+POST http://localhost:3333/gyms/:gymId/check-ins
+content-type: application/json
+Authorization: Bearer {{authToken}}
+
+{
+  "latitude": -20.7400886,
+  "longitude": -47.753894
+}
+
+###
+
+### 📜 Histórico de Check-ins
+GET http://localhost:3333/check-ins/history?page=1
+Authorization: Bearer {{authToken}}
+
+###
+
+### 📊 Métricas de Check-ins
+GET http://localhost:3333/check-ins/metrics
+Authorization: Bearer {{authToken}}
+
+###
+
+### ✔️ Validar Check-in
+# Apenas usuários com a role ADMIN podem acessar esta rota
+# Substitua :checkInId pelo ID real do check-in
+PATCH http://localhost:3333/check-ins/:checkInId/validate
+Authorization: Bearer {{authToken}}
+
+###
