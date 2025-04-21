@@ -1,4 +1,29 @@
-# 💪 Trainify
+<h1 align="center">💪 Trainify</h1>
+
+<p align="center">Uma API de gerenciamento de academias inspirada no GymPass, projetada para simplificar a conexão entre usuários e academias.
+  <br/><br/>
+  <img src="https://img.shields.io/github/last-commit/joschonarth/trainify?style=default&logo=git&logoColor=white&color=0080ff&labelColor=2f363d" alt="last-commit">
+	<img src="https://img.shields.io/github/languages/top/joschonarth/trainify?style=default&color=0080ff&labelColor=2f363d" alt="repo-top-language">
+	<img src="https://img.shields.io/github/languages/count/joschonarth/trainify?style=default&color=0080ff&labelColor=2f363d" alt="repo-language-count">
+  <img src="https://github.com/joschonarth/trainify/actions/workflows/run-unit-tests.yml/badge.svg?style=for-the-badge&color=a277ff&labelColor=1C1E26" alt="unit-tests">
+  <img src="https://github.com/joschonarth/trainify/actions/workflows/run-e2e-tests.yml/badge.svg?style=for-the-badge&color=a277ff&labelColor=1C1E26" alt="e2e-tests">
+</p>
+
+## 📑 Índice
+
+- [👀 Visão Geral](#-visão-geral)
+- [🛠️ Tecnologias Utilizadas](#️-tecnologias-utilizadas)
+- [⚙️ Funcionalidades](#️-funcionalidades)
+- [🚀 Como Executar o Projeto](#-como-executar-o-projeto)
+- [🔗 Endpoints](#-endpoints)
+- [🔐 Autenticação](#-autenticação)
+- [🧪 Testes](#-testes)
+- [⚙️ GitHub Actions](#️-github-actions)
+- [🤝 Contribuições](#-contribuições)
+- [⭐ Apoie este Projeto](#-apoie-este-projeto)
+- [📞 Contato](#-contato)
+
+# 👀 Visão Geral
 
 **Trainify** é uma solução robusta para gerenciamento de academias, proporcionando funcionalidades essenciais como registro de usuários, autenticação, localização de academias próximas e controle de check-ins. Inspirada em plataformas como o GymPass, esta API oferece uma experiência eficiente e segura para academias e seus frequentadores.
 
@@ -43,7 +68,7 @@
 - 📊 **Métricas de check-ins**: Fornece dados sobre a quantidade total de check-ins realizados.
 - ✔️ **Validar check-in**: Confirma a validade de um check-in.
 
-## 🔧 Como Executar o Projeto
+## 🚀 Como Executar o Projeto
 
 1. **Clone o repositório:**
 
@@ -393,7 +418,11 @@ O projeto utiliza o **GitHub Actions** para automação de testes, garantindo qu
 
 ## 🤝 Contribuições
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests com melhorias ou correções. 🚀
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests com melhorias ou correções. ✨
+
+## ⭐ Apoie este Projeto
+
+Se este projeto te ajudou ou te inspirou de alguma forma, não esqueça de deixar uma ⭐ no repositório! Isso faz toda a diferença! 🚀
 
 ## 📞 Contato
 
