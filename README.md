@@ -1,12 +1,12 @@
-<h1 align="center">💪 Trainify</h1>
+<h1 align="center">🏋️ FastyPass</h1>
 
 <p align="center"><i>API para gerenciamento de academias, projetada para facilitar a conexão entre usuários e estabelecimentos fitness.</i>
   <br/><br/>
-  <img src="https://img.shields.io/github/last-commit/joschonarth/trainify?style=default&logo=git&logoColor=white&color=0080ff&labelColor=2f363d" alt="last-commit">
-	<img src="https://img.shields.io/github/languages/top/joschonarth/trainify?style=default&color=0080ff&labelColor=2f363d" alt="repo-top-language">
-	<img src="https://img.shields.io/github/languages/count/joschonarth/trainify?style=default&color=0080ff&labelColor=2f363d" alt="repo-language-count">
-  <img src="https://github.com/joschonarth/trainify/actions/workflows/run-unit-tests.yml/badge.svg?style=for-the-badge&color=a277ff&labelColor=1C1E26" alt="unit-tests">
-  <img src="https://github.com/joschonarth/trainify/actions/workflows/run-e2e-tests.yml/badge.svg?style=for-the-badge&color=a277ff&labelColor=1C1E26" alt="e2e-tests">
+  <img src="https://img.shields.io/github/last-commit/joschonarth/fastypass-api?style=default&logo=git&logoColor=white&color=0080ff&labelColor=2f363d" alt="last-commit">
+	<img src="https://img.shields.io/github/languages/top/joschonarth/fastypass-api?style=default&color=0080ff&labelColor=2f363d" alt="repo-top-language">
+	<img src="https://img.shields.io/github/languages/count/joschonarth/fastypass-api?style=default&color=0080ff&labelColor=2f363d" alt="repo-language-count">
+  <img src="https://github.com/joschonarth/fastypass-api/actions/workflows/run-unit-tests.yml/badge.svg?style=for-the-badge&color=a277ff&labelColor=1C1E26" alt="unit-tests">
+  <img src="https://github.com/joschonarth/fastypass-api/actions/workflows/run-e2e-tests.yml/badge.svg?style=for-the-badge&color=a277ff&labelColor=1C1E26" alt="e2e-tests">
 </p>
 
 ## 📑 Índice
@@ -25,7 +25,7 @@
 
 # 👀 Visão Geral
 
-**Trainify** é uma solução robusta para gerenciamento de academias, proporcionando funcionalidades essenciais como registro de usuários, autenticação, localização de academias próximas e controle de check-ins. Inspirada em plataformas como o GymPass, esta API oferece uma experiência eficiente e segura para academias e seus frequentadores.
+**FastyPass** é uma solução robusta para gerenciamento de academias, proporcionando funcionalidades essenciais como registro de usuários, autenticação, localização de academias próximas e controle de check-ins. Inspirada em plataformas como o GymPass, esta API oferece uma experiência eficiente e segura para academias e seus frequentadores.
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -73,7 +73,7 @@
 1. **Clone o repositório:**
 
    ```bash
-   git clone https://github.com/joschonarth/trainify.git
+   git clone https://github.com/joschonarth/fastypass-api.git
    ```
 
 2. **Crie um arquivo `.env` a partir do exemplo:**
